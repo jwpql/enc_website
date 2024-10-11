@@ -1,5 +1,8 @@
 body {
-	background-color: black;
+	background: black url(img/bg_planets.jpg) no-repeat;
+	background-position: bottom 0px right 0px;
+	background-size: 1344px 756px;
+	background-attachment: fixed;
 	text-align: center;
 	font-size: 16px;
 	color: white;
@@ -22,17 +25,10 @@ a {
 }
 
 
-#leftnav1 {
-    position: fixed;
-    display: block;
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
-    text-align: left;
-    top: 5;
-    left: 10;
-    width: 200px;
-    background: black
+#box{
+	margin-top: 25%;
+	text-align: left;
+	max-width: 900px;
 }
 
 
