@@ -21,12 +21,39 @@ p {
 
 
 a {
-    	color: blue;
+    color: white;
+text-decoration-line:none;
+font-weight:bold;
 }
 
 
+#logo{
+position: absolute;
+left: 50px;
+top: 10px;
+display:inline;
+}
+
+#navbutton {
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(0, 0, 0, .7);
+    outline-style: solid;
+    outline-color: black;
+    display: inline;
+}
+
+
+#navbutton:hover{
+    background-color: blue;
+    color:black;
+}
+
 #box{
-	margin-top: 25%;
+	margin-top: 13%;
 	text-align: left;
 	max-width: 900px;
 }
