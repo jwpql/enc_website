@@ -21,21 +21,49 @@ p {
 
 
 a {
-    	color: blue;
+    color: white;
+text-decoration-line:none;
 }
 
 
 #topnav {
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    background: green;
+z-index: 1;
+width: 100%;
+text-align: right;
 }
+
+#logo{
+position: absolute;
+left: 50px;
+top: 10px;
+display:inline;
+}
+
+
+#navbutton {
+width: 300px;
+text-align: center;
+padding: 5px;
+padding-left: 10px;
+padding-right: 10px;
+background: rgba(0, 0, 0, .7);
+outline-style: solid;
+outline-color: black;
+display: inline;
+}
+
+
+#navbutton:hover{
+background-color: blue;
+color:black;
+}
+
 
 .tabs {
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
+    top: 13%;
 }
 
 .tabs_label {

@@ -60,10 +60,9 @@ display:inline;
 
 
 #topnav {
-    position: absolute;
-    left: 50%;
-    margin-left: -150px;
-    background: green;
+    z-index: 1;
+    width: 100%;
+    text-align: right;
 }
 
 .tabs {
