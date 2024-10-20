@@ -50,61 +50,8 @@ display:inline;
     color:black;
 }
 
-#box{
-	margin-top: 13%;
-	text-align: left;
-	max-width: 900px;
-}
-
-
 #topnav {
     z-index: 1;
     width: 100%;
     text-align: right;
-}
-
-.tabs {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-}
-
-.tabs_label {
-    padding: 10px 16px;
-    position: relative;
-    display: block;
-    text-align: left;
-    top: 5;
-    left: 10;
-    max-width:500px;
-    width: 500px;
-    z-index: 1;
-}
-
-.tabs_radio {
-    display: none;
-}
-
-
-.tabs_content {
-    position: relative;
-    padding: 30px;
-    max-width: 1000px;
-    width: 1000px;
-    order: 1;
-    top: 10;
-    margin-left: 205px;
-    margin-top: -110px;
-    border: 3px solid red;
-    display: none;
-    z-index: 2;
-}
-
-.tabs_radio:checked + .tabs_label {
-  font-weight: bold;
-  border-left: 2px solid white;
-}
-
-.tabs_radio:checked+.tabs_label+.tabs_content {
-    display:inline-block;  
 }

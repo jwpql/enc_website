@@ -47,8 +47,6 @@ padding: 5px;
 padding-left: 10px;
 padding-right: 10px;
 background: rgba(0, 0, 0, .7);
-outline-style: solid;
-outline-color: black;
 display: inline;
 }
 
@@ -84,11 +82,11 @@ color:black;
 
 
 .tabs_content {
-    background-color: black;
     position: relative;
     padding: 30px;
     max-width: 1000px;
     width: 1000px;
+    max-height: 400px;
     order: 1;
     top: 10;
     margin-left: 205px;
@@ -96,6 +94,9 @@ color:black;
     border: 3px solid red;
     display: none;
     z-index: 2;
+    overflow:scroll;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, .8);
 }
 
 .tabs_radio:checked + .tabs_label {
