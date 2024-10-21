@@ -22,12 +22,12 @@ a {
 }
 
 #box{
-	width: 40%;
 	overflow-y: auto;
 	position: relative;
 	top: 30px;
 	height: 550px;
 	display:inline-block;
 	text-align: center;
+	outline: solid 7px black;
+	background-color:darkred;
 }
-
