@@ -31,6 +31,15 @@ hr {
     margin:10px;
 }
 
+#banner {
+    width:100%; 
+    display: block; 
+    max-height:100px; 
+    margin-bottom: 10px;
+    overflow:hidden;
+    text-align: center;
+}
+
 #flexbox{
     display:flex;
     justify-content: space-between;
