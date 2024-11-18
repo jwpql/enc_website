@@ -47,7 +47,7 @@ hr {
     background-color:darkred;
 }
 
-#leftbar{
+.leftbar{
     width: 13%;
     position: inline-block;
 }
@@ -96,3 +96,93 @@ div.rightboxcontent th{
     position:relative;
     display:inline-block;
 }
+
+.topbuttonclicked{
+    display:inline-block;
+    width:20%;
+    background-color: rgb(2, 2, 87);
+    padding:10px;
+    margin-left: 10px;
+    border-radius: 9px;
+}
+
+.topbutton{
+    display:inline-block;
+    width:20%;
+    background-color: navy;
+    padding:10px;
+    margin-left: 10px;
+    border-radius: 9px;
+}
+
+.topbutton:hover{
+    background-color: rgb(2, 2, 87);
+}
+
+div.topbutton a {
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.tabs {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.tabs_label {
+    padding: 10px 16px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 43%;
+    left: 50%;
+    max-width:300px;
+    z-index: 1;
+}
+
+.tabs_radio {
+    display: none;
+}
+
+
+.tabs_content {
+    position: relative;
+    max-width: 100%;
+    order: 1;
+    margin-top:90px;
+    display: none;
+    z-index: 2;
+    margin-left:10px;
+}
+
+.tabs_radio:checked + .tabs_label {
+  font-weight: bold;
+  color: goldenrod;
+  border-bottom: 2px solid goldenrod;
+}
+
+.tabs_radio:checked+.tabs_label+.tabs_content {
+    display:block;  
+}
+
+@media only screen and (max-width: 600px) {
+    #flexbox{
+        display:block;
+    }
+    #leftbar{
+        display: block;
+        width:100%;
+    }
+    #mainbody{
+        width:100%;
+    }
+    a {
+        padding-left:0px;
+    }
+    .tabs_label {
+        top: 100%;
+        left:40%;
+    }
+
+  }
