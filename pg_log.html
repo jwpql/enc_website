@@ -1,34 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Home </title>
-	<link rel="stylesheet" href="style_home.css">
+	<title>Change log</title>
+	<link rel="stylesheet" href="style_charas_template.css">
 </head>
-<body>
-	<p>
-	9/28 (check in 1): the website has basic functionality. The links work. I know how to format pages and embed images now 
-	(even if the current design is very... minimal). I also figured out clickable tabs + how to upload websites online.
-	In the future, I want to work on the actual content (text, image assets, art) for the site. I want to make it look nicer. 
-	I'm thinking about making this an archive for a personal worldbuilding project.
-	I should also figure out the organization of the website. If I have time at the end, I could attempt mobile compatibility.
-    <br/> <br/>
-	10/1: I figured out how to make the background change when I click tabs!!!!! I drew characters and added them to the link on the right.
-	I'm really proud of the art! The page kind of breaks when the screen is not 1080x1920, though. I should fix that at some point. 
-	<br/><br/>
-    10/8: I've been really busy, so not much time (or energy) to code. I've been working on non-code things, though. I drew around 4 new 
-	backgrounds and made a website mock up on google slides to plan out the formatting.
-	<br/><br/>
-	10/19: I've been looking into how to make an image gallery. Clicking on the images could open the image in another window, or it could 
-	trigger a modal. The modal code looks confusing. I would have to learn Javascript. A third programming language seems a bit much, but 
-	I could definitely copy and modify some code on the internet though. Right now the gallery is very simple. You can right click and open the
-	images in a new tab for a better view. <br>The website review assignment also made me think about website 
-	design. I originally wasn't planning on a very elaborate navigation system (since the site isn't practical so much as it's an experience 
-	in my vision). However UI elements like navigation bars are still important, so I added one. Also added a logo (I will draw it later).
-	<br/><br/>
-	11/7: decided to try more wiki style for website, made template for character page. most pages can be made from that. tempalte page isnt accessible thru main website right now.
-	<br/><br/>
-	11/8: modified template, added character specific gallery template. Added RUDIMENTARY media query, site is slightly less unnavigable on tall screens. Added banner image.
-</p>
-	</p>
-</body>
+
+<div id="banner"><img src="img/banner.jpg" style="width:102%" /></div>
+
+
+<div id="flexbox">
+
+    <div class="leftbar">
+        <a href="index.html"><img src="img/logo.png" style="width:100%"></a>
+        <br></br>
+        <div style="border: solid darkred 3px;padding:10px;">
+            <a href="index.html">Main page</a><br>
+            <a href="pg_log.html">Recent changes</a><br>
+            <a href="pg_gallery.html">Gallery</a><br>
+            <br>-<br>
+            <a href="list_charas.html">Characters</a><br>
+            <a href="list_timeline.html">Events</a><br>
+            <a href="list_locations.html">Locations</a><br>
+            <a href="list_groups.html">Organizations</a><br>
+            <a href="list_world.html">Miscellaneous</a><br>
+            <br>-<br>
+            <a href="https://github.com/jwpql/enc_website">Github</a><br><br>
+        </div>
+    </div>
+
+<div id="mainbody">
+    
+    
+        <h1>Change log</h1>
+        <hr></hr>
+        <p style="padding: 20px;">
+			11/19: I finished most of the website base, including templates for different kinds of pages. 
+			I've also been working on mobile compatibility. 
+			Resizing the window on my laptop triggers the desired effects, but opening the website on my phone doesn't? 
+			Other than that, the main task left is to upload and add content to the website. 
+			I plan to do this over Thanksgiving break. 
+			I like working on this website. 
+			After this class ends, I might continue updating it. 
+			I could learn Javascript and make a gallery with properly working modals. 
+			I also had an idea to add fake ads around the website.
+			<hr></hr>
+			11/8: Modified template and added character specific gallery template. 
+			A lot of wikis have a separate gallery page for each entry. 
+			I draw a lot so I figured I should make one. 
+			Added RUDIMENTARY media query (code that changes website layout depending on window size). 
+			Site is slightly less unnavigable on tall screens. Added banner image. Drew buttons for home page. 
+			<hr></hr>
+			11/7: I felt like my original idea lacked a solid direction, so I decided to try a wiki style for website. 
+			I made template for a wiki page, with a sidebar and main body. 
+			Most pages can be made from that. The template page isnt accessible thru main website right now, though.
+			<hr></hr>
+			10/19: I've been looking into how to make an image gallery. 
+			Clicking on the images could open the image in another window, or it could trigger a modal. 
+			The modal code looks confusing. I would have to learn Javascript. 
+			A third programming language seems a bit much, but I could  copy and modify code from the internet. 
+			Right now the gallery is very simple. You can right click and open the images in a new tab for a better view.
+			<br><br>
+			The website review assignment also made me think about website design. 
+			I originally wasn't planning on a very elaborate navigation system 
+			(since the site isn't practical so much as it's an experience in my vision). 
+			However UI elements like navigation bars are still important, so I added one. 
+			Also added a placeholderlogo (I will draw it later).
+			<hr></hr>
+			10/8: I've been really busy, so not much time (or energy) to code. 
+			I've been working on non-code things, though. 
+			I drew around 4 new backgrounds and made a website mock up on google slides to plan out the formatting.
+			<hr></hr>
+			10/1: I figured out how to make the background change when I click tabs. 
+			I drew characters and added them to the link on the right. 
+			The page kind of breaks when the screen is not 1080x1920, though. I should fix that at some point.
+			<hr></hr>
+			9/28 (check in 1): the website has basic functionality. The links work. 
+			I know how to format pages and embed images now (even if the current design is very... minimal). 
+			I also figured out clickable tabs + how to upload websites online. 
+			In the future, I want to work on the actual content (text, image assets, art) for the site. 
+			I want to make it look nicer. I'm thinking about making this an archive for a personal worldbuilding project. 
+			I should also figure out the organization of the website. 
+			If I have time at the end, I could attempt mobile compatibility.
+        </p>
+</div>
+
+</div>
+
 </html>
