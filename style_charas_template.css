@@ -189,6 +189,15 @@ div.galleryimg img{
     max-height:100%;
 }
 
+
+.buttoncontainer {
+    padding:20px;
+}
+
+.buttoncontainer :hover{
+    opacity:0.9;
+}
+
 @media only screen and (max-width: 600px) {
     #flexbox{
         display:block;
@@ -214,14 +223,6 @@ div.galleryimg img{
     }
     #rightbox{
         width:90%;
-    }
-
-    .buttoncontainer {
-        padding:20px;
-    }
-    
-    div.buttoncontainer img:hover{
-        opacity:0.5;
     }
 
     div.topbutton a {
