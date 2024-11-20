@@ -192,11 +192,14 @@ div.galleryimg img{
 
 .buttoncontainer {
     padding:20px;
+    text-align: center;
+    display:inline-block;
 }
 
 .buttoncontainer :hover{
     opacity:0.9;
 }
+
 
 @media only screen and (max-width: 600px) {
     #flexbox{
