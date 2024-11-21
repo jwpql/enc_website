@@ -100,7 +100,6 @@ div.rightboxcontent th{
 }
 
 #indexbox{
-    border: solid 3px darkred;
     display:inline-block;
     width:47%;
     margin-left: 10px;
