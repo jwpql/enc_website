@@ -57,7 +57,8 @@ hr {
 }
 
 .leftbar{
-    width: 13%;
+    width: 185px;;
+    min-width: 150px;
     position: inline-block;
 }
 
@@ -96,6 +97,14 @@ hr {
 div.rightboxcontent th{
     font-weight:normal;
     border-top:solid black 2px;
+}
+
+#indexbox{
+    border: solid 3px darkred;
+    display:inline-block;
+    width:47%;margin-left: 10px;
+    overflow:auto;
+    height:auto;
 }
 
 #imgcontainer{
@@ -202,8 +211,19 @@ div.galleryimg img{
     opacity:0.9;
 }
 
+#footer{
+    width:100%;
+    text-align: center;
+    position:relative;
+    display:block;
+    top:100px;
+    left:0;
+    padding:20px;
+    font-size: 80%;
+}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 800px) {
     #flexbox{
         display:block;
     }
@@ -234,6 +254,12 @@ div.galleryimg img{
         padding:0px;
         padding-left:-5px;
         padding-right:0px;
+    }
+    #indexbox{
+        width:90%;
+        display:block;
+        margin:auto;
+        margin-top:20px;
     }
 
 
