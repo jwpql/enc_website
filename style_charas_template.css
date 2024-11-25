@@ -162,7 +162,7 @@ div.topbutton a:hover {
     position: absolute;
     display: inline-block;
     text-align: center;
-    top: 43%;
+    top: 320px;
     left: 50%;
     max-width:300px;
     z-index: 1;
