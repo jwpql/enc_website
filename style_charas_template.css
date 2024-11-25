@@ -16,8 +16,9 @@ a {
     text-decoration-line:none;
 }
 
+
 a:hover{
-    font-weight: bold;
+    text-decoration: underline;
 }
 
 h1 {
@@ -77,6 +78,8 @@ hr {
     width: 20%;
     float: right;
     text-align:center;
+    margin-left: 10px; 
+    margin-bottom: 10px;
 }
 
 #rightboxhead{
@@ -144,6 +147,11 @@ div.topbutton a {
     padding-right:25px;
 }
 
+div.topbutton a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .tabs {
     display: inline-block;
     max-width: 100%;
@@ -191,13 +199,22 @@ div.galleryimg{
     width:250px;
     display:inline-block;
     text-align: center;
-    vertical-align: bottom;
+    vertical-align: middle;
     margin:7px;
+    margin-bottom: 14px;
+    position:relative;
+    border: solid 2px rgb(45, 45, 45);
 }
 
 div.galleryimg img{
     max-width:100%;
     max-height:100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
 }
 
 
@@ -247,7 +264,8 @@ div.galleryimg img{
         left:40%;
     }
     #rightbox{
-        width:90%;
+        width:95%;
+        margin-left: 0;
     }
 
     div.topbutton a {
