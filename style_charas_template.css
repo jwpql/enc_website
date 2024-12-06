@@ -1,3 +1,4 @@
+/* basic formatting (links, paragraphs, etc) */
 body {
 	background: black;
 	text-align: left;
@@ -71,7 +72,7 @@ hr {
     padding-right: 20px;
     padding-top: 20px;
     }
-
+/*in text images and caption */
 #rightbox{
     position: relative;
     border: solid darkred 3px;
@@ -110,15 +111,7 @@ div.rightboxcontent th{
     height:auto;
 }
 
-#imgcontainer{
-    width: 300px;
-    height: 300px;
-    overflow:hidden;
-    object-fit:cover;
-    position:relative;
-    display:inline-block;
-}
-
+/* overview/gallery buttons on character page*/
 .topbuttonclicked{
     display:inline-block;
     width:20%;
@@ -151,7 +144,7 @@ div.topbutton a:hover {
     font-weight: bold;
     text-decoration: none;
 }
-
+/* tabs for character galleries*/
 .tabs {
     display: inline-block;
     max-width: 100%;
@@ -193,6 +186,15 @@ div.topbutton a:hover {
 .tabs_radio:checked+.tabs_label+.tabs_content {
     display:block;  
 }
+/*gallery formatting*/
+#imgcontainer{
+    width: 300px;
+    height: 300px;
+    overflow:hidden;
+    object-fit:cover;
+    position:relative;
+    display:inline-block;
+}
 
 div.galleryimg{
     height:250px;
@@ -217,7 +219,13 @@ div.galleryimg img{
     margin:auto;
 }
 
+div.imgcaption{
+    width:100%;
+    background-color: aqua;
+    display:none;
+}
 
+/*buttons in front page */
 .buttoncontainer {
     padding:20px;
     text-align: center;
@@ -227,7 +235,7 @@ div.galleryimg img{
 .buttoncontainer :hover{
     opacity:0.9;
 }
-
+/*footer*/
 #footer{
     width:100%;
     text-align: center;
@@ -237,6 +245,12 @@ div.galleryimg img{
     left:0;
     padding:20px;
     font-size: 80%;
+}
+
+/*Details formatting*/
+summary{
+    font-size: 1.5em;
+    padding-bottom:10px;
 }
 
 
