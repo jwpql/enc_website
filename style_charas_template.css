@@ -206,6 +206,7 @@ div.galleryimg{
     margin-bottom: 14px;
     position:relative;
     border: solid 2px rgb(45, 45, 45);
+    cursor: pointer;
 }
 
 div.galleryimg img{
@@ -251,6 +252,41 @@ div.imgcaption{
 summary{
     font-size: 1.5em;
     padding-bottom:10px;
+}
+
+/*modal formatting for gallery*/
+
+.modal {
+  display: none;
+  position: fixed;
+  text-align: center;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.616);
+  z-index: 1;
+}
+
+.close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 150px;
+  font-size: 60px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.modal-content{
+  display: block;
+  height:100%;
+}
+
+.modal-content img{
+  max-width: 90%;
+  height: 100%;
+  z-index: 2;
 }
 
 

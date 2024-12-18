@@ -3,6 +3,7 @@
 <head>
 	<title>Gallery</title>
 	<link rel="stylesheet" href="style_charas_template.css">
+    <script src="script.js"></script>
 </head>
 
 <div id="banner"><img src="img/banner.jpg" style="width:102%" /></div>
@@ -32,16 +33,22 @@
         <h1>Gallery</h1>
         <hr></hr>
         <div style="text-align: center;">
-            <div class="galleryimg"><a href="img/bg_basil.JPG"><img src="img/bg_basil.JPG" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="img/bg_fortune.JPG"><img src="img/bg_fortune.JPG" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="img/bg_mela.jpg"><img src="img/bg_mela.jpg" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="img/bg_shadow.JPG"><img src="img/bg_shadow.JPG" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="img/bg_soraya.JPG"><img src="img/bg_soraya.JPG" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="img/bg_tirziri.JPG"><img src="img/bg_tirziri.JPG" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="img/bg_yuan.JPG"><img src="img/bg_yuan.JPG" alt="Illustration"></a></div>
+            <div class="galleryimg"><img src="img/bg_basil.JPG" alt="Illustration" onclick="openModal('img/bg_basil.JPG')"></div>
+            <div class="galleryimg"><img src="img/bg_fortune.JPG" alt="Illustration" onclick="openModal('img/bg_fortune.JPG')"></div>
+            <div class="galleryimg"><img src="img/bg_mela.jpg" alt="Illustration" onclick="openModal('img/bg_mela.jpg')"></div>
+            <div class="galleryimg"><img src="img/bg_shadow.JPG" alt="Illustration" onclick="openModal('img/bg_shadow.JPG')"></div>
+            <div class="galleryimg"><img src="img/bg_soraya.JPG" alt="Illustration" onclick="openModal('img/bg_soraya.JPG')"></div>
+            <div class="galleryimg"><img src="img/bg_tirziri.JPG" alt="Illustration" onclick="openModal('img/bg_tirziri.JPG')"></div>
+            <div class="galleryimg"><img src="img/bg_yuan.JPG" alt="Illustration" onclick="openModal('img/bg_yuan.JPG')"></div>
             <div style="padding:20px">Page <a href="pg_gallery.html">1</a> 2</div>
         </div>
-
+        <!-- modal -->
+        <div id="myModal" class="modal">
+            <span class="close cursor"onclick="closeModal()">&times;</span>
+            <div class="modal-content" > 
+            <a href="placeholder.png" id="modallink"><img src="/placeholder.png" id="modalimg" alt="Illustration"></a>
+            </div>
+        </div>
     </div>
 </div>
 

@@ -3,6 +3,7 @@
 <head>
 	<title>Gallery</title>
 	<link rel="stylesheet" href="style_charas_template.css">
+    <script src="script.js"></script>
 </head>
 
 <div id="banner"><img src="img/banner.jpg" style="width:102%" /></div>
@@ -33,15 +34,22 @@
         <hr></hr>
         <div style="text-align: center;">
             <div style="padding:20px"><a href="pg_gallery.html">Illustrations</a> | References | <a href="pg_gallery_assets.html">Site Assets</a></div>
-            <div class="galleryimg"><a href="img/map_new.jpg"><img src="img/map_new.jpg" alt="Map of New World"></a></div>
-            <div class="galleryimg"><a href="img/g_basil_ref.jpeg"><img src="img/g_basil_ref.jpeg" alt="Basileios reference image"></a></div>
-            <div class="galleryimg"><a href="img/g_emek.jpg"><img src="img/g_emek.jpg" alt="Emek concept art"></a></div>
-            <div class="galleryimg"><a href="img/g_ref_fortune.jpg"><img src="img/g_ref_fortune.jpg" alt="Fortune reference image"></a></div>
-            <div class="galleryimg"><a href="img/g_ref_mela.jpg"><img src="img/g_ref_mela.jpg" alt="Mela reference image"></a></div>
-            <div class="galleryimg"><a href="img/g_ref_sora.jpeg"><img src="img/g_ref_sora.jpeg" alt="Soraya reference image"></a></div>
-            <div class="galleryimg"><a href="img/g_ref_ziri.png"><img src="img/g_ref_ziri.png" alt="Tirziri reference image" style="width:85%;"></a></div>
-            <div class="galleryimg"><a href="img/g_ref_yuan.jpg"><img src="img/g_ref_yuan.jpg" alt="Yuan reference image"></a></div>
+            <div class="galleryimg"><img src="img/map_new.jpg" alt="Map of New World" onclick="openModal('img/map_new.jpg')"></div>
+            <div class="galleryimg"><img src="img/g_basil_ref.jpeg" alt="Basileios reference image" onclick="openModal('img/g_basil_ref.jpeg')"></div>
+            <div class="galleryimg"><img src="img/g_emek.jpg" alt="Emek concept art" onclick="openModal('img/g_emek.jpg')"></div>
+            <div class="galleryimg"><img src="img/g_ref_fortune.jpg" alt="Fortune reference image" onclick="openModal('img/g_ref_fortune.jpg')"></div>
+            <div class="galleryimg"><img src="img/g_ref_mela.jpg" alt="Mela reference image" onclick="openModal('img/g_ref_mela.jpg')"></div>
+            <div class="galleryimg"><img src="img/g_ref_sora.jpeg" alt="Soraya reference image" onclick="openModal('img/g_ref_sora.jpeg')"></div>
+            <div class="galleryimg"><img src="img/g_ref_ziri.png" alt="Tirziri reference image" style="width:85%;" onclick="openModal('img/g_ref_ziri.png')"></div>
+            <div class="galleryimg"><img src="img/g_ref_yuan.jpg" alt="Yuan reference image" onclick="openModal('img/g_ref_yuan.jpg')"></div>
             <div style="padding:20px">Page 1</div>
+        </div>
+        <!-- modal -->
+        <div id="myModal" class="modal">
+            <span class="close cursor"onclick="closeModal()">&times;</span>
+            <div class="modal-content" > 
+            <a href="placeholder.png" id="modallink"><img src="/placeholder.png" id="modalimg" alt="Illustration"></a>
+            </div>
         </div>
 
     </div>
