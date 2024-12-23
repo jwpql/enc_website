@@ -3,6 +3,7 @@
 <head>
 	<title>Emek- Gallery</title>
 	<link rel="stylesheet" href="../style_charas_template.css">
+    <script src="../script.js"></script>
 </head>
 
 <div id="banner"><img src="../img/banner.jpg" style="width:102%" /></div>
@@ -43,13 +44,20 @@
         <input type="radio" class="tabs_radio" name="world_info" id="tab1" checked>
         <label for="tab1" class="tabs_label">Illustrations</label>
         <div class="tabs_content">
-            Nothing here yet...
+            Nothing here yet.
         </div>
     <div class="tabs">
         <input type="radio" class="tabs_radio" name="world_info" id="tab2">
         <label for="tab2" class="tabs_label" style="left:62%;">Other</label>
         <div class="tabs_content">
-            <div class="galleryimg"><a href="../img/g_emek_sketch.jpg"><img src="../img/g_emek_sketch.jpg" alt="Reference sheet"></a></div>
+            <div class="galleryimg"><img src="../img/g_emek_sketch.jpg" alt="Reference sheet" onclick="openModal('../img/g_emek_sketch.jpg')"></div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div id="myModal" class="modal" style="z-index: 2;">
+        <span class="close cursor"onclick="closeModal()">&times;</span>
+        <div class="modal-content" > 
+        <a href="placeholder.png" id="modallink"><img src="/placeholder.png" id="modalimg" alt="Illustration"></a>
         </div>
     </div>
 

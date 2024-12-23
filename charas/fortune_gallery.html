@@ -3,6 +3,7 @@
 <head>
 	<title>Fortune- Gallery</title>
 	<link rel="stylesheet" href="../style_charas_template.css">
+    <script src="../script.js"></script>
 </head>
 
 <div id="banner"><img src="../img/banner.jpg" style="width:102%" /></div>
@@ -43,17 +44,24 @@
         <input type="radio" class="tabs_radio" name="world_info" id="tab1" checked>
         <label for="tab1" class="tabs_label">Illustrations</label>
         <div class="tabs_content">
-            <div class="galleryimg"><a href="../img/bg_fortune.JPG"><img src="../img/bg_fortune.JPG" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="../img/g_fortune.jpg"><img src="../img/g_fortune.jpg" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="../img/g_eye.jpg"><img src="../img/g_eye.jpg" alt="Illustration" style="width:85%;"></a></div>
-            <div class="galleryimg"><a href="../img/g_artificial.jpg"><img src="../img/g_artificial.jpg" alt="Illustration"></a></div>
-            <div class="galleryimg"><a href="../img/g_sunflower.jpg"><img src="../img/g_sunflower.jpg" alt="Illustration"></a></div>
+            <div class="galleryimg"><img src="../img/bg_fortune.JPG" alt="Illustration" onclick="openModal('../img/bg_fortune.JPG')"></div>
+            <div class="galleryimg"><img src="../img/g_fortune.jpg" alt="Illustration" onclick="openModal('../img/g_fortune.jpg')"></div>
+            <div class="galleryimg"><img src="../img/g_eye.jpg" alt="Illustration" style="width:85%;" onclick="openModal('../img/g_eye.jpg')"></div>
+            <div class="galleryimg"><img src="../img/g_artificial.jpg" alt="Illustration" onclick="openModal('../img/g_artificial.jpg')"></div>
+            <div class="galleryimg"><img src="../img/g_sunflower.jpg" alt="Illustration" onclick="openModal('../img/g_sunflower.jpg')"></div>
         </div>
     <div class="tabs">
         <input type="radio" class="tabs_radio" name="world_info" id="tab2">
         <label for="tab2" class="tabs_label" style="left:62%;">Other</label>
         <div class="tabs_content">
-            <div class="galleryimg"><a href="../img/g_ref_fortune.jpg"><img src="../img/g_ref_fortune.jpg" alt="Reference sheet"></a></div>
+            <div class="galleryimg"><img src="../img/g_ref_fortune.jpg" alt="Reference sheet" onclick="openModal('../img/g_ref_fortune.jpg')"></div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div id="myModal" class="modal" style="z-index: 2;">
+        <span class="close cursor"onclick="closeModal()">&times;</span>
+        <div class="modal-content" > 
+        <a href="placeholder.png" id="modallink"><img src="/placeholder.png" id="modalimg" alt="Illustration"></a>
         </div>
     </div>
 
