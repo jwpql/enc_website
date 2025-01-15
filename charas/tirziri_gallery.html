@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fortune- Gallery | ENC Wiki</title>
+	<title>Tirziri- Gallery | ENC Wiki</title>
 	<link rel="stylesheet" href="../style_charas_template.css">
     <script src="../script.js"></script>
 </head>
@@ -11,6 +11,7 @@
 
 <div id="flexbox">
 
+<!--left bar content (ignore)-->
 <div class="leftbar">
     <a href="../index.html"><img src="../img/logo.png" style="width:100%;"></a>
     <br></br>
@@ -25,48 +26,53 @@
         <a href="../list_groups.html">Organizations</a><br>
         <a href="../list_world.html">Miscellaneous</a><br>
         <br>-<br>
+        <a href="https://github.com/jwpql/enc_website">Github</a><br><br>
     </div>
 </div>
 
 <div id="mainbody">
 
-    <h1>Fortune- Gallery</h1>
+    <h1>Title</h1>
     <hr></hr>
 
+    <!--overview/gallery buttons (change links for each character)-->
     <div style="text-align: center;">
-    <div class="topbutton"><a href="fortune.html">Overview</a></div>
+    <div class="topbutton"><a href="chara_template.html">Overview</a></div>
     <div class="topbuttonclicked" style="color:goldenrod;font-weight:bold;">Gallery</div> 
     </div>
     <br>
 
+    <!--tabs-->
     <div style="text-align: center;">
     <div class="tabs">
         <input type="radio" class="tabs_radio" name="world_info" id="tab1" checked>
         <label for="tab1" class="tabs_label">Illustrations</label>
         <div class="tabs_content">
-            <div class="galleryimg"><img src="../img/bg_fortune.JPG" alt="Illustration" onclick="openModal('../img/bg_fortune.JPG')"></div>
-            <div class="galleryimg"><img src="../img/g_fortune.jpg" alt="Illustration" onclick="openModal('../img/g_fortune.jpg')"></div>
-            <div class="galleryimg"><img src="../img/g_eye.jpg" alt="Illustration" style="width:85%;" onclick="openModal('../img/g_eye.jpg')"></div>
-            <div class="galleryimg"><img src="../img/g_artificial.jpg" alt="Illustration" onclick="openModal('../img/g_artificial.jpg')"></div>
-            <div class="galleryimg"><img src="../img/g_sunflower.jpg" alt="Illustration" onclick="openModal('../img/g_sunflower.jpg')"></div>
+            <div class="galleryimg"><img src="../img/g_ziri.jpg" alt="Illustration" onclick="openModal('../img/g_ziri.jpg')"></div>
         </div>
     <div class="tabs">
         <input type="radio" class="tabs_radio" name="world_info" id="tab2">
         <label for="tab2" class="tabs_label" style="left:62%;">Other</label>
         <div class="tabs_content">
-            <div class="galleryimg"><img src="../img/g_ref_fortune.jpg" alt="Reference sheet" onclick="openModal('../img/g_ref_fortune.jpg')"></div>
+            <div class="galleryimg"><img src="../img/g_ref_ziri.png" alt="Reference sheet" onclick="openModal('../img/g_ref_ziri.png')"></div>
         </div>
     </div>
     <!-- modal -->
     <div id="myModal" class="modal" style="z-index: 2;">
         <span class="close cursor"onclick="closeModal()">&times;</span>
         <div class="modal-content" > 
-        <a href="placeholder.png" id="modallink"><img src="/placeholder.png" id="modalimg" alt="Illustration"></a>
+        <a href="placeholder.png" id="modallink"><img src="../placeholder.png" id="modalimg" alt="Modal image"></a>
         </div>
     </div>
 
 </div>
 
 </div>
+
+<div id="footer">
+	Contact: jwu3@ufl.edu<br>
+	© 2024 jwpql
+</div>
+
 
 </html>
