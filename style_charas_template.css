@@ -73,6 +73,10 @@ hr {
     padding-top: 20px;
     }
 
+#tableofcontents{
+    margin-left:40px;
+}
+
 /*in text images and caption ==============================*/
 #rightbox{
     position: relative;
