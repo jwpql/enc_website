@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Koga- Gallery | ENC Wiki</title>
+	<link rel="stylesheet" href="../style_charas_template.css">
+    <script src="../script.js"></script>
+</head>
+
+<div id="banner"><img src="../img/banner.jpg" style="width:102%" /></div>
+
+
+<div id="flexbox">
+
+<!--left bar content (ignore)-->
+<div class="leftbar">
+    <a href="../index.html"><img src="../img/logo.png" style="width:100%;"></a>
+    <br></br>
+    <div style="border: solid darkred 3px;padding:10px;">
+        <a href="../index.html">Main page</a><br>
+        <a href="../pg_log.html">Recent changes</a><br>
+        <a href="../pg_gallery.html">Gallery</a><br>
+        <br>-<br>
+        <a href="../list_charas.html">Characters</a><br>
+        <a href="../list_timeline.html">Timeline</a><br>
+        <a href="../list_locations.html">Locations</a><br>
+        <a href="../list_groups.html">Organizations</a><br>
+        <a href="../list_world.html">Miscellaneous</a><br>
+        <br>-<br>
+        <a href="https://github.com/jwpql/enc_website">Github</a><br><br>
+    </div>
+</div>
+
+<div id="mainbody">
+
+    <h1>Morikawa Koga- Gallery</h1>
+    <hr></hr>
+
+    <!--overview/gallery buttons (change links for each character)-->
+    <div style="text-align: center;">
+    <div class="topbutton"><a href="koga.html">Overview</a></div>
+    <div class="topbuttonclicked" style="color:goldenrod;font-weight:bold;">Gallery</div> 
+    </div>
+    <br>
+
+    <!--tabs-->
+    <div style="text-align: center;">
+    <div class="tabs">
+        <input type="radio" class="tabs_radio" name="world_info" id="tab1" checked>
+        <label for="tab1" class="tabs_label">Illustrations</label>
+        <div class="tabs_content">
+            Nothing here yet.
+        </div>
+    <div class="tabs">
+        <input type="radio" class="tabs_radio" name="world_info" id="tab2">
+        <label for="tab2" class="tabs_label" style="left:62%;">Other</label>
+        <div class="tabs_content">
+            <div class="galleryimg"><img src="../img/g_ref_koga.jpg" alt="Reference sheet" onclick="openModal('../img/g_ref_koga.jpg')"></div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div id="myModal" class="modal" style="z-index: 2;">
+        <span class="close cursor"onclick="closeModal()">&times;</span>
+        <div class="modal-content" > 
+        <a href="placeholder.png" id="modallink"><img src="../placeholder.png" id="modalimg" alt="Modal image"></a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<div id="footer">
+	Contact: jwu3@ufl.edu<br>
+	© 2024 jwpql
+</div>
+
+
+</html>

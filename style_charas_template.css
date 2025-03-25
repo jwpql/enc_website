@@ -299,9 +299,18 @@ summary{
     right:0;
 }
 
+@media only screen and (max-width: 1000px){
+    .tabs_label {
+        top: 45%;
+        left:40%;
+    }
+    #rightbox{
+        width:95%;
+        margin-left: 0;
+    }
+}
 
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     #flexbox{
         display:block;
     }
@@ -321,7 +330,7 @@ summary{
         padding-left:0px;
     }
     .tabs_label {
-        top: 90%;
+        top: 100%;
         left:40%;
     }
     #rightbox{

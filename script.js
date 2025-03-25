@@ -9,6 +9,3 @@ function openModal(a) { //a is string for image source
   function closeModal() {
     document.getElementById("myModal").style.display = "none";
 }
-
-
-
