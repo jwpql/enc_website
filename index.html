@@ -3,6 +3,7 @@
 <head>
 	<title>ENC Wiki</title>
 	<link rel="stylesheet" href="style_charas_template.css">
+	<script src="script.js"></script>
 </head>
 
 <div id="banner"><img src="img/banner.jpg" style="width:102%" /></div>
@@ -70,26 +71,32 @@
 						<a href="charas/fortune.html"><img src="img/buttons/ch_fortune.jpg"></img>
 							<br>Fortune</a>
 					</div>
-					<div class="buttoncontainer" style="padding:0;">
+					<!--<div class="buttoncontainer" style="padding:0;">
 						<a href="charas/emek.html"><img src="img/buttons/ch_swan.jpg"></img>
 							<br>Emek</a>
 					</div>
 					<div class="buttoncontainer" style="padding:0;">
 						<a href="charas/basil.html"><img src="img/buttons/ch_basil.jpg"></img>
 							<br>Basileios</a>
-					</div>
+					</div>-->
 					<div class="buttoncontainer" style="padding:0;">
-						<a href="charas/minor_charas.html"><img src="img/buttons/ch_blank.jpg"></img>
-							<br>Miscellaneous</a>
+						<a href="list_charas.html"><img src="img/buttons/ch_blank.jpg"></img>
+							<br>List</a>
 					</div>
 			</div>
 			
-			<img src="img/yuan_glitter.gif" style="width:70%;margin-top:10px;"><br>
+			<img src="img/yuan_glitter.gif" style="width:70%;margin-top:10px;" onclick="openModal('img/yuan_glitter.gif')"><br>
 			
 		</div>
 	</div>
 
-
+	<!-- modal -->
+	<div id="myModal" class="modal">
+		<span class="close cursor"onclick="closeModal()">&times;</span>
+		<div class="modal-content" > 
+		<a href="placeholder.png" id="modallink"><img src="/placeholder.png" id="modalimg" alt="Illustration"></a>
+		</div>
+	</div>
 
 </div>
      
